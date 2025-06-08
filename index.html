@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPSSA Software Engineering Community - University of Ghana</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">COMPSSA</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero gradient-bg">
+      <div class="particles" id="particles"></div>
+      <div class="hero-content">
+        <h1>COMPSSA Software Engineering Community</h1>
+        <p>
+          Empowering Computer Science Students at the University of Ghana to
+          Build, Learn, and Innovate Together
+        </p>
+        <a href="#about" class="cta-button">Join Our Community</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title">About COMPSSA</h2>
+      <p
+        style="
+          text-align: center;
+          font-size: 1.1rem;
+          margin-bottom: 2rem;
+          color: #666;
+        "
+      >
+        The Computer Science Student Association Software Engineering Community
+        is a vibrant hub for CS students at the University of Ghana, dedicated
+        to fostering collaboration, learning, and innovation in software
+        development.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>🚀 Mission</h3>
+          <p>
+            To create a collaborative environment where computer science
+            students can enhance their software engineering skills, share
+            knowledge, and work on real-world projects that make a difference.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>💡 Vision</h3>
+          <p>
+            To be the leading student community that bridges the gap between
+            academic learning and industry practice, producing skilled software
+            engineers ready for the global market.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>🎯 Goals</h3>
+          <p>
+            Foster peer learning, organize workshops and hackathons, connect
+            students with industry professionals, and create opportunities for
+            collaborative software development projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+      <h2 class="section-title">Upcoming Events</h2>
+      <div class="events-grid">
+        <div class="event-card">
+          <div class="event-date">July 15, 2025</div>
+          <h3>Web Development Workshop</h3>
+          <p>
+            Learn modern web development techniques with React, Node.js, and
+            MongoDB. Perfect for beginners and intermediate developers.
+          </p>
+        </div>
+        <div class="event-card">
+          <div class="event-date">August 5, 2025</div>
+          <h3>Hackathon 2025</h3>
+          <p>
+            48-hour coding challenge to solve real-world problems. Teams will
+            compete for prizes and recognition from industry partners.
+          </p>
+        </div>
+        <div class="event-card">
+          <div class="event-date">August 20, 2025</div>
+          <h3>Industry Talk Series</h3>
+          <p>
+            Guest speakers from leading tech companies will share insights about
+            career paths, emerging technologies, and industry trends.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+      <h2 class="section-title">Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-avatar">P</div>
+          <h3>President</h3>
+          <p>Leading the community vision and coordinating major initiatives</p>
+        </div>
+        <div class="team-member">
+          <div class="member-avatar">VP</div>
+          <h3>Vice President</h3>
+          <p>Supporting leadership and managing day-to-day operations</p>
+        </div>
+        <div class="team-member">
+          <div class="member-avatar">T</div>
+          <h3>Technical Lead</h3>
+          <p>Overseeing technical projects and mentoring members</p>
+        </div>
+        <div class="team-member">
+          <div class="member-avatar">E</div>
+          <h3>Events Coordinator</h3>
+          <p>Planning and organizing workshops, hackathons, and meetups</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-form">
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="student-id">Student ID</label>
+            <input
+              type="text"
+              id="student-id"
+              name="student-id"
+              placeholder="Your UG Student ID"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us about your interest in joining COMPSSA or ask any questions..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <h3>COMPSSA Software Engineering Community</h3>
+        <p>Computer Science Student Association - University of Ghana</p>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+        </div>
+        <p>
+          &copy; 2025 COMPSSA Software Engineering Community. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
