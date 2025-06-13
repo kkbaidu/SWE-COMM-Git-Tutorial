@@ -43,12 +43,12 @@ This repository, potentially with the use of different branches, would have serv
 *   How to open Pull Requests to propose changes.
 *   How to merge Pull Requests after review.
 
-## How to Use This Repository (for Session Attendees)
+## How to Use This Repository
 
-If you attended the session, you might have:
+For members of of the community, you can do the following:
 
-*   Cloned this repository to your local machine.
-*   Created your own branches to practice Git commands.
+*   Clone this repository to your local machine.
+*   Create your own branches to practice Git commands.
 *   Made changes to the files and pushed them to your own fork or a specific branch.
 
 This repository serves as a reference point for the concepts discussed during the session.
