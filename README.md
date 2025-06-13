@@ -49,6 +49,6 @@ For members of of the community, you can do the following:
 
 *   Clone this repository to your local machine.
 *   Create your own branches to practice Git commands.
-*   Made changes to the files and pushed them to your own fork or a specific branch.
+*   Make changes to the files and pushed them to your own fork or a specific branch.
 
 This repository serves as a reference point for the concepts discussed during the session.
